@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 
-const TypingEffect: React.FC = () => {
+const Hero: React.FC = () => {
   const textRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
@@ -32,4 +32,4 @@ const TypingEffect: React.FC = () => {
   );
 };
 
-export default TypingEffect;
+export default Hero;
