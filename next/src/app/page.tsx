@@ -7,22 +7,22 @@ import Footer from './_components/Footer'
 
 export default function Home() {
   return (
-    <main>
-      <div>
+    <section className= {s.container}>
+      <div className={s.component}>
         <Hero />
       </div>
-      <div>
+      <div className={s.component}>
         <Profile />
       </div>
-      <div>
+      <div className={s.component}>
         <Production />
       </div>
-      <div>
+      <div className={s.component}>
         <Skills />
       </div>
-      <div>
+      <div className={s.component}>
         <Footer />
       </div>
-    </main>
+    </section>
   )
 }
