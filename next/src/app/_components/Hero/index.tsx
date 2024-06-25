@@ -1,35 +1,52 @@
-"use client"
+'use client'
 
-import React, { useEffect, useRef } from 'react';
-import Typed from 'typed.js';
+import s from './index.module.scss'
+import React from 'react'
+import Image from 'next/image'
 
 const Hero: React.FC = () => {
-  const textRef = useRef<HTMLSpanElement>(null);
-
-  useEffect(() => {
-    if (textRef.current) {
-      const options = {
-        strings: ['Hello World!', 'Welcome to Typed.js!'],
-        typeSpeed: 50,
-        backSpeed: 25,
-        loop: true,
-        showCursor: true,
-        cursorChar: '|',
-      };
-
-      const typed = new Typed(textRef.current, options);
-
-      return () => {
-        typed.destroy();
-      };
-    }
-  }, []);
-
   return (
-    <div id="app" style={{ textAlign: 'center', marginTop: '50px' }}>
-      <span id="typed" ref={textRef}></span>
-    </div>
-  );
-};
+    <section className={s.container}>
+      <div className={s.component}>
+        <h1>Matsuura Eita</h1>
+      </div>
+      <div className={s.component}>
+        <p>front engineer</p>
+      </div>
+      <div className={s.component}>
+        <a href="mailto:your.email@example.com">
+          <Image
+            src="/mail.png"
+            alt="Production Image"
+            width={60}
+            height={60}
+            layout="responsive"
+            className={s.picture}
+          />
+        </a>
+        <a href="https://yourwebsite.com">
+          <Image
+            src="/git.png"
+            alt="Production Image"
+            width={60}
+            height={60}
+            layout="responsive"
+            className={s.picture}
+          />
+        </a>
+        <a href="https://github.com/youruseraame">
+          <Image
+            src="/x.png"
+            alt="Production Image"
+            width={60}
+            height={60}
+            layout="responsive"
+            className={s.picture}
+          />
+        </a>
+      </div>
+    </section>
+  )
+}
 
-export default Hero;
+export default Hero
