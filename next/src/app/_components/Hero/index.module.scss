@@ -1,23 +1,50 @@
 .container {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
   font-size: 40px;
   letter-spacing: 0.3em;
-  display: flex;
   flex-direction: column;
   .component {
-    margin-top: 32px;
+    display: flex;
+    margin-top: 16px;
+    gap: 48px; // 画像の間に20pxの間隔を空ける
   }
   h1 {
     font-size: 72px;
     margin: 0;
   }
   .picture {
-    max-width: 100%;
-    display: flex;
-    gap: 48px; // 画像の間に20pxの間隔を空ける
+    min-width: 64px;
+  }
+}
+
+/*メディアクエリ*/
+/*タブレット*/
+@media screen and (max-width: 1200px) {
+  .container {
+    .component {
+      margin-top: 8px;
+      gap: 32px; // 画像の間に20pxの間隔を空ける
+    }
+  }
+}
+
+/*スマホ*/
+@media (max-width: 600px) {
+  .container {
+    font-size: 24px;
+    .component {
+      margin-top: 0px;
+      gap: 24px; // 画像の間に20pxの間隔を空ける
+    }
+    h1 {
+      font-size: 40px;
+    }
+    .picture {
+      min-width: 40px;
+    }
   }
 }
