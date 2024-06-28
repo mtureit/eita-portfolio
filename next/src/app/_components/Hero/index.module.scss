@@ -2,32 +2,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
   margin: 0;
   padding: 0;
   font-size: 40px;
   letter-spacing: 0.3em;
-  flex-direction: column;
+  margin-top: 120px;
+  width: 100%;
   .component {
     display: flex;
     margin-top: 16px;
     gap: 48px; // 画像の間に20pxの間隔を空ける
+    max-width: 1440px;
   }
   h1 {
     font-size: 72px;
     margin: 0;
   }
   .picture {
-    min-width: 64px;
+    color: #000;
   }
 }
 
 /*メディアクエリ*/
 /*タブレット*/
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .container {
     .component {
       margin-top: 8px;
-      gap: 32px; // 画像の間に20pxの間隔を空ける
+      gap: 32px; // 画像の間に32pxの間隔を空ける
     }
   }
 }
@@ -38,13 +43,10 @@
     font-size: 24px;
     .component {
       margin-top: 0px;
-      gap: 24px; // 画像の間に20pxの間隔を空ける
+      gap: 24px; // 画像の間に24pxの間隔を空ける
     }
     h1 {
       font-size: 40px;
-    }
-    .picture {
-      min-width: 40px;
     }
   }
 }

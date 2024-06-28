@@ -2,7 +2,9 @@
 
 import s from './index.module.scss'
 import React from 'react'
-import Image from 'next/image'
+import { GrMailOption } from 'react-icons/gr'
+import { IoLogoGithub } from 'react-icons/io5'
+import { FaXTwitter } from 'react-icons/fa6'
 
 const Hero: React.FC = () => {
   return (
@@ -14,36 +16,21 @@ const Hero: React.FC = () => {
         <p>front engineer</p>
       </div>
       <div className={s.component}>
-        <a href="mailto:your.email@example.com">
-          <Image
-            src="/mail.png"
-            alt="Production Image"
-            width={60}
-            height={60}
-            layout="responsive"
-            className={s.picture}
-          />
-        </a>
-        <a href="https://yourwebsite.com">
-          <Image
-            src="/git.png"
-            alt="Production Image"
-            width={60}
-            height={60}
-            layout="responsive"
-            className={s.picture}
-          />
-        </a>
-        <a href="https://github.com/youruseraame">
-          <Image
-            src="/x.png"
-            alt="Production Image"
-            width={60}
-            height={60}
-            layout="responsive"
-            className={s.picture}
-          />
-        </a>
+        <div className={s.picture}>
+          <a href="mailto:your.email@example.com">
+            <GrMailOption color="#FFF" size={56} />
+          </a>
+        </div>
+        <div className={s.picture}>
+          <a href="https://yourwebsite.com">
+            <IoLogoGithub color="#FFF" size={56} />
+          </a>
+        </div>
+        <div className={s.picture}>
+          <a href="https://github.com/youruseraame">
+            <FaXTwitter color="#FFF" size={56} />
+          </a>
+        </div>
       </div>
     </section>
   )
