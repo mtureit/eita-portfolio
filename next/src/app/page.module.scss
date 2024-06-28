@@ -1,26 +1,26 @@
 .container {
-  margin-bottom:0;
+  margin: 0;
   padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  // max-width: 1440px;
-}
 
+
+  .component {
+    margin-bottom: 300px;
+  }
+}
 
 /*メディアクエリ*/
 /*タブレット*/
-@media screen and (max-width:1200px) {
-    
+@media screen and (max-width: 1200px) {
+  .container {
+    .component {
+      margin-bottom: 240px;
+    }
+  }
 }
 
 /*スマホ*/
-@media (max-width:600px) {
-
+@media (max-width: 600px) {
+  .component {
+    margin-bottom: 160px;
+  }
 }
