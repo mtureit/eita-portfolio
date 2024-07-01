@@ -19,6 +19,8 @@ const Production: React.FC = () => {
               height={455}
             />
           </div>
+        </div>
+        <div className={s.box}>
           <div className={s.belong}>
             <p>NUTMEG-Seedsに参加した</p>
           </div>

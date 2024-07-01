@@ -18,25 +18,22 @@
     padding: 16px;
     font-size: 32px;
   }
+  .picture {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
   .component {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: block;
     justify-content: center;
-    // width: 90%;
+    width: 50%;
     max-width: 1440px;
-
-    .box {
-      .picture {
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
   }
   .belong {
     border: 6px solid #fff;
@@ -62,20 +59,21 @@
     p {
       font-size: 32px;
     }
-    .component {
+    .picture {
       margin: 0;
       padding: 0;
-      display: flex;
-      justify-content: center;
-
-      .picture {
-        margin: 0;
-        padding: 0;
-        img {
-          width: 100%;
-          height: auto;
-        }
+      align-items: center;
+      img {
+        width: 100%;
+        height: auto;
       }
+    }
+    .component {
+      width: 90%;
+      margin: 0;
+      padding: 0;
+      display: block;
+      justify-content: center;
     }
     .belong {
       border: 4px solid #fff;
@@ -102,21 +100,25 @@
       padding: 8px;
       font-size: 16px;
     }
+    .picture {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
     .component {
       margin: 0;
       padding: 0;
-      display: flex;
+      display: block;
       justify-content: center;
-      width: 100%;
+      width: 95%;
       font-size: 16px;
-      .picture {
+      .box {
         margin: 0;
         padding: 0;
-        width: 100%;
-        img {
-          width: 100%;
-          height: auto;
-        }
       }
     }
     .belong {
