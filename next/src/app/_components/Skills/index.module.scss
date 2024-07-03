@@ -1,0 +1,102 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.2em;
+  line-height: 0.5; /* 行の高さを調整する */
+  width: 100%;
+  h2 {
+    margin: 0px;
+    margin-bottom: 32px;
+    padding: 0;
+    font-size: 48px;
+  }
+  .component {
+    justify-content: center;
+    max-width: 1440px;
+    font-size: 32px;
+    width: 70%;
+  }
+  .box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+  }
+  .status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about {
+    font-size: 32px;
+    text-align: center;
+    margin: 0px;
+  }
+  .detail {
+    display: flex;
+    align-items: center; /* 横並びにするために追加 */
+    border: 6px solid #fff;
+    border-radius: 10px;
+    text-align: left;
+    letter-spacing: 0.3em;
+    flex-direction: row; /* 子要素を横方向に配置 */
+    width: 100%;
+  }
+
+  .icon {
+    margin-right: 16px; /* アイコンとテキストの間にスペースを追加 */
+    font-size: 80px;
+    align-self: flex-start; /* アイコンを上端に配置 */
+  }
+}
+/*メディアクエリ*/
+/*タブレット*/
+@media screen and (max-width: 1000px) {
+  .container .component {
+    display: block;
+    flex-direction: column;
+    width: 90%;
+    h2 {
+      font-size: 40px;
+      margin-bottom: 24px;
+    }
+  }
+  .container .box {
+    gap: 24px;
+  }
+
+  .status .detail {
+    border: 4px solid #fff;
+  }
+}
+
+/*スマホ*/
+@media (max-width: 600px) {
+  .container .component {
+    display: block;
+    flex-direction: column;
+    width: 95%;
+  }
+  .container h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .container .box {
+    display: block;
+    font-size: 16px;
+  }
+  .status .about {
+    font-size: 16px;
+  }
+  .status .detail {
+    border: 2px solid #fff;
+  }
+  .status .icon {
+    font-size: 40px;
+  }
+}
