@@ -6,6 +6,10 @@
   .component {
     margin-bottom: 300px;
   }
+  .component:last-of-type{
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /*メディアクエリ*/
