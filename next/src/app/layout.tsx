@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { DotGothic16 } from 'next/font/google'
+import GoogleAnalytics from './_components/thirdparty/GoogleAnalytics'
 import './globals.css'
 
 const dotgothic16 = DotGothic16({
@@ -20,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        <GoogleAnalytics />
+      </head>
       <body className={dotgothic16.className}>{children}</body>
     </html>
   )
