@@ -1,8 +1,9 @@
-'use client'
+'use client';
 
-import s from './index.module.scss'
-import React from 'react'
-import { RxTriangleDown } from 'react-icons/rx'
+import React from 'react';
+import { RxTriangleDown } from 'react-icons/rx';
+import s from './index.module.scss';
+
 
 const Profile: React.FC = () => {
   return (
@@ -27,7 +28,7 @@ const Profile: React.FC = () => {
                 <p>えいた</p>
               </div>
               <div className={s.like}>
-                <p>「デザインや　フロントエンドに　興味があります」</p>
+                <p>「デザインや  フロントエンドに  興味があります」</p>
               </div>
               <div className={s.icon}>
                 <RxTriangleDown />

@@ -7,7 +7,7 @@ import Footer from './_components/Footer'
 
 export default function Home() {
   return (
-    <section className= {s.container}>
+    <section className={s.container}>
       <div className={s.component}>
         <Hero />
       </div>
