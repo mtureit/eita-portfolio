@@ -1,7 +1,7 @@
 'use client'
 
-import s from './index.module.scss'
 import React from 'react'
+import s from './index.module.scss'
 
 const Footer: React.FC = () => {
   return (

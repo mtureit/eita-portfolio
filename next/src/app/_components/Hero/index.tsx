@@ -1,10 +1,10 @@
 'use client'
 
-import s from './index.module.scss'
 import React from 'react'
 import { GrMailOption } from 'react-icons/gr'
 import { IoLogoGithub } from 'react-icons/io5'
 import { FaXTwitter } from 'react-icons/fa6'
+import s from './index.module.scss'
 
 const Hero: React.FC = () => {
   return (

@@ -1,9 +1,8 @@
-'use client';
+'use client'
 
-import React from 'react';
-import { RxTriangleRight } from 'react-icons/rx';
-import s from './index.module.scss';
-
+import React from 'react'
+import { RxTriangleRight } from 'react-icons/rx'
+import s from './index.module.scss'
 
 const Skills: React.FC = () => {
   return (

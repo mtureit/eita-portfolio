@@ -1,9 +1,8 @@
-'use client';
+'use client'
 
-import React from 'react';
-import Image from 'next/image';
-import s from './index.module.scss';
-
+import React from 'react'
+import Image from 'next/image'
+import s from './index.module.scss'
 
 const Production: React.FC = () => {
   return (
