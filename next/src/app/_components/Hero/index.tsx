@@ -17,17 +17,17 @@ const Hero: React.FC = () => {
       </div>
       <div className={s.component}>
         <div className={s.picture}>
-          <a href="mailto:your.email@example.com">
+          <a href="mailto:24.e.matsuura.nutfes@gmail.com">
             <GrMailOption color="#FFF" size={56} />
           </a>
         </div>
         <div className={s.picture}>
-          <a href="https://yourwebsite.com">
+          <a href="https://github.com/mtureit">
             <IoLogoGithub color="#FFF" size={56} />
           </a>
         </div>
         <div className={s.picture}>
-          <a href="https://github.com/youruseraame">
+          <a href="https://x.com/A_aisa1129">
             <FaXTwitter color="#FFF" size={56} />
           </a>
         </div>
