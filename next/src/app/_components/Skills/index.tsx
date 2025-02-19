@@ -18,6 +18,7 @@ const Skills: React.FC = () => {
               <div className={s.icon}>
                 <RxTriangleRight />
               </div>
+
               <div>
                 <p>HTML</p>
                 <p>CSS</p>

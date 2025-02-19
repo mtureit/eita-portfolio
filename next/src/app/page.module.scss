@@ -1,23 +1,22 @@
 .container {
   margin: 0;
   padding: 0;
+}
 
-  .component {
-    margin-bottom: 300px;
-  }
-  .component:last-of-type {
-    margin: 0;
-    padding: 0;
-  }
+.component {
+  margin-bottom: 300px;
+}
+
+.component:last-of-type {
+  margin: 0;
+  padding: 0;
 }
 
 /*メディアクエリ*/
 /*タブレット*/
 @media screen and (max-width: 1000px) {
-  .container {
-    .component {
-      margin-bottom: 240px;
-    }
+  .component {
+    margin-bottom: 240px;
   }
 }
 
