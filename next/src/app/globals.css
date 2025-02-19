@@ -2,5 +2,19 @@ html {
   background-color: black;
   color: white;
 
+  margin: 0;
   padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
