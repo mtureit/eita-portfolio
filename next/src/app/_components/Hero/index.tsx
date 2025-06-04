@@ -8,7 +8,7 @@ import s from './index.module.scss'
 
 const Hero: React.FC = () => {
   return (
-    <section className={s.container}>
+    <section id="hero" className={s.container}>
       <div className={s.component}>
         <h1>Matsuura Eita</h1>
       </div>

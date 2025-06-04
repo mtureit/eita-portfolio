@@ -6,7 +6,7 @@ import s from './index.module.scss'
 
 const Profile: React.FC = () => {
   return (
-    <section className={s.container}>
+    <section id="profile" className={s.container}>
       <h2>Profile</h2>
       <div className={s.component}>
         <div className={s.box}>
