@@ -1,0 +1,54 @@
+.art {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.steam {
+  animation: steam 2.4s steps(3) infinite;
+}
+
+.ripple {
+  animation: ripple 1.8s steps(2) infinite;
+}
+
+.lids {
+  opacity: 0;
+  animation: blink 2.8s steps(1) infinite;
+}
+
+@keyframes steam {
+  0% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(-1px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+}
+
+@keyframes ripple {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+@keyframes blink {
+  0%,
+  94% {
+    opacity: 0;
+  }
+  95%,
+  100% {
+    opacity: 1;
+  }
+}

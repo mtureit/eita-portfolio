@@ -1,0 +1,79 @@
+.sky {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.field {
+  position: absolute;
+  inset: 0;
+  animation: drift 40s linear infinite alternate;
+}
+
+.star {
+  position: absolute;
+  background: var(--color-fg);
+  opacity: 0.15;
+  animation-name: twinkle;
+  animation-timing-function: steps(4);
+  animation-iteration-count: infinite;
+}
+
+.accent {
+  background: var(--color-accent);
+}
+
+.shooting {
+  position: absolute;
+  top: 8%;
+  right: -40px;
+  width: 64px;
+  height: 4px;
+  background: linear-gradient(to right, var(--color-fg), transparent);
+  opacity: 0;
+  animation: shoot 9s linear 2s infinite;
+}
+
+.scanlines {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0.22) 0 1px, transparent 1px 3px);
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-120px);
+  }
+}
+
+@keyframes shoot {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  14%,
+  100% {
+    transform: translate(-520px, 260px);
+    opacity: 0;
+  }
+}
