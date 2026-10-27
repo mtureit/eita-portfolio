@@ -1,20 +1,84 @@
-html {
-  background-color: black;
-  color: white;
+/*
+ * Color tokens: "onsen night" palette (decided 2026-10-27). Change colors here only.
+ */
+:root {
+  --color-bg: #0b1426;
+  --color-surface: rgba(11, 20, 38, 0.88);
+  --color-panel: #13213d;
+  --color-fg: #eef3fa;
+  --color-muted: #9fb0cc;
+  --color-subtle: #c4d0e3;
+  --color-line: #253a60;
+  --color-border-soft: #3a5280;
+  --color-accent: #7fd4ff;
+  --color-on-accent: #0b1426;
 
-  margin: 0;
-  padding: 0;
+  --font-dot-stack: var(--font-dot), 'DotGothic16', monospace;
+  --font-body-stack: var(--font-body), 'BIZ UDPGothic', 'Hiragino Sans', sans-serif;
+
+  --content-width: 1120px;
+  --gutter: 32px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-body-stack);
+  font-size: 16px;
+  line-height: 1.8;
 }
 
-* {
-  -ms-overflow-style: none;
+h1,
+h2,
+h3,
+p,
+ol,
+ul {
+  margin: 0;
 }
 
-::-webkit-scrollbar {
-  display: none;
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --gutter: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0s !important;
+  }
 }
