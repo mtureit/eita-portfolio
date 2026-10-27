@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "eita-portfolio",
+  // Personal account (Mtureit@gmail.com). Do not deploy to the lab accounts.
+  "account_id": "4a114bfdd139e285794ff69108c5c5f9",
+  "compatibility_date": "2026-10-27",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
