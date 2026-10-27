@@ -14,7 +14,7 @@ const Production: React.FC = () => {
             <Image
               src="/Seeds.png"
               alt="Production Image"
-              layout="responsive"
+              
               width={800}
               height={455}
             />
